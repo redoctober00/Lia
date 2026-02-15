@@ -11,11 +11,7 @@ export const CAROUSEL_IMAGES: CarouselImage[] = [
     caption: 'abangan mo yung ano',
     isVideo: true,
   },
-  {
-    url: 'https://cdn.discordapp.com/attachments/1306984078666498099/1382333306888257658/eee.mp4?ex=69926276&is=699110f6&hm=761372a12cb5e6e541e02b2c04330fd771462513f489418f9afff67f64a8d6be&',
-    caption: 'abangan mo yung ano',
-    isVideo: true,
-  },
+ 
    {
     url: 'https://cdn.discordapp.com/attachments/1306984078666498099/1355951986800853105/ahahahha.mp4?ex=6992a672&is=699154f2&hm=972f96307e8f6f68bb4e05bf3199fb019b60d8f5cb2b38b3f8fbb6244f92ea23&',
     caption: 'hwadhahdaha antanga',

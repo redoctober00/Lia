@@ -65,7 +65,7 @@ const App = () => {
                     className="w-50 h-50 mb-4"
                   />
                   <h2 className="text-4xl md:text-5xl font-bold text-rose-900 mb-6 leading-tight">
-                    I love girlfriend
+                    I love my girlfriend
                   </h2>
                   <p className="text-lg text-rose-800 leading-relaxed font-light">
                   To my sweetest girlfriend, Lia.
