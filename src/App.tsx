@@ -141,7 +141,7 @@ const App = () => {
         {/* Infinite Menu Section */}
         <section className="container mx-auto px-4 py-20 max-w-6xl">
           <div className="text-center mb-12">
-            <p className="text-xl text-rose-600 font-light">Drag mo malopit yan</p>
+            <p className="text-xl text-rose-600 font-light">MGA TAO TALAGA MAGALING SA CALOOCAN</p>
           </div>
           <div className="h-[600px] w-full rounded-3xl overflow-hidden bg-black/5">
             <InfiniteMenu items={MENU_ITEMS} />

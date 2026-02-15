@@ -63,31 +63,31 @@ export const MENU_ITEMS = [
     image: 'https://media.discordapp.net/attachments/1317140929554939907/1472562987083501650/IMG_1915.jpg?ex=699306a7&is=6991b527&hm=915e3a139f93af0575685e8e29bf907ca6b10592e459f946215d6a54e3c2208a&=&format=webp&width=450&height=800',
     link: '#',
     title: '',
-    description: 'Our moments'
+    description: ''
   },
   {
     image: 'https://media.discordapp.net/attachments/1317140929554939907/1472562987855380524/IMG_1911.jpg?ex=699306a7&is=6991b527&hm=62bff860db855357eb227f379ecf72d927fd10230e0fb98a190bc0df24f6248d&=&format=webp&width=450&height=800',
     link: '#',
     title: '',
-    description: 'Our moments'
+    description: ''
   },
   {
     image: 'https://media.discordapp.net/attachments/1317140929554939907/1472562988815880223/IMG_1974.jpg?ex=699306a7&is=6991b527&hm=9c33025e8e4513b8693280afe7ff8af716ca6d3851b9251f4fc63582c3cc0e74&=&format=webp&width=450&height=800',
     link: '#',
     title: '',
-    description: 'Our moments'
+    description: ''
   },
   {
     image: 'https://media.discordapp.net/attachments/1317140929554939907/1472562989558136864/IMG_1909.jpg?ex=699306a7&is=6991b527&hm=e709bb0aa5dce8ffed0c338d2632f9b72a6d42cbe4e32eddd2c049c7d103f7c9&=&format=webp&width=450&height=800',
     link: '#',
     title: '',
-    description: 'Our moments'
+    description: ''
   },
   {
     image: 'https://media.discordapp.net/attachments/1317140929554939907/1472562989939949713/image-19.png?ex=699306a7&is=6991b527&hm=88b399548615b5f1ba0c504622a71855df6b448b36837ecae426b8e8d24e9ed2&=&format=webp&quality=lossless&width=501&height=654',
     link: '#',
     title: '',
-    description: 'Our moments'
+    description: ''
   },
 ];
 
