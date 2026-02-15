@@ -44,7 +44,7 @@ const App = () => {
               To My Dearest Love, Lia
             </h1>
             <p className="text-2xl md:text-3xl text-rose-700 font-light tracking-wide animate-fadeInUp animation-delay-300 leading-relaxed">
-          I hope you like this. I made it especially for you. I love you so much, my pretty Lia. Happy Valentine’s Day❤️!            </p>
+           Hello gumaganern sha, I love you so much, Happy Valentine’s Day Lia ❤️!            </p>
             
           </div>
         </section>
