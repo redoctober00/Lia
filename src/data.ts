@@ -76,26 +76,38 @@ export const MENU_ITEMS = [
   {
     image: img1,
     link: '#',
+    title: '',
+    description: '',
   },
   {
     image: img2,
     link: '#',
+    title: '',
+    description: '',
   },
   {
     image: img3,
     link: '#',
+    title: '',
+    description: '',
   },
   {
     image: img4,
     link: '#',
+    title: '',
+    description: '',
   },
   {
     image: img5,
     link: '#',
+    title: '',
+    description: '',
   },
   {
     image: img6,
     link: '#',
+    title: '',
+    description: '',
   },
    
  
