@@ -1,5 +1,17 @@
 import { useEffect, useMemo, useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
+import img1 from '../assets/1.jpg';
+import img2 from '../assets/2.jpg';
+import img3 from '../assets/3.jpg';
+import img4 from '../assets/4.jpg';
+import img5 from '../assets/5.jpg';
+import img6 from '../assets/6.jpg';
+import img7 from '../assets/7.jpg';
+import img8 from '../assets/8.jpg';
+import img9 from '../assets/9.jpg';
+import img10 from '../assets/10.jpg';
+import img11 from '../assets/11.jpg';
+
 
 type ImageItem = string | { src: string; alt?: string };
 
@@ -34,73 +46,50 @@ type ItemDef = {
 
 const DEFAULT_IMAGES: ImageItem[] = [
   {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1466916671938625657/IMG_0780.jpg?ex=6992429c&is=6990f11c&hm=4b973afeb41df38d875f136fecd8e2f3d454b0dd833de4f4047e05cc6ff651a7&=&format=webp&width=1066&height=800',
-    alt: 'Abstract art'
+    src: img1,
+    alt: 'lia1'
   },
   {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1466916672937136198/IMG_0839.jpg?ex=6992429c&is=6990f11c&hm=d60541fa9a7c6241c714fd2371e38a1e93dd58afcef170587493101c692a38d7&=&format=webp&width=600&height=800',
-    alt: 'Modern sculpture'
+    src: img2,
+    alt: 'lia'
   },
   {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1464763347575636082/IMG_0300.jpg?ex=6992562c&is=699104ac&hm=00677a5381a60ae19aea96e216ac99da555089d886e49dcaa4a83c75ad58fd5d&=&format=webp&width=698&height=930',
-    alt: 'Digital artwork'
+    src: img3,
+    alt: 'lia1'
   },
   {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1471474926597967913/IMG_1974.jpg?ex=69925d11&is=69910b91&hm=0c5bbdb752c4f532911bd86eb37ddc22b00163abb1fd85c1419bf8c1b2fa3f06&=&format=webp&width=523&height=930',
-    alt: 'Contemporary art'
+    src: img5,
+    alt: 'lia'
   },
   {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1471473407290900521/IMG_1915.jpg?ex=69925ba6&is=69910a26&hm=a369bb2e2f4074b99d3d39a5ef5b20f7f030750a42ed783b745dde5f151d3e51&=&format=webp&width=450&height=800',
-    alt: 'Geometric pattern'
+    src: img4,
+    alt: 'lia'
   },
   {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1471473410725904464/IMG_1909.jpg?ex=69925ba7&is=69910a27&hm=a7807cee89430b5d732d6bc1d816e4dd70c117de66a22c99a22ac896f0ea5ae2&=&format=webp&width=450&height=800',
-    alt: 'Textured surface'
+    src: img6,
+    alt: 'lia'
   },
   {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1461611268845600927/370B3FDF-1E88-4538-93B4-F838644523C7.jpg?ex=6992bc11&is=69916a91&hm=1adbf8d43a017aa30bcbd54c145ab43991e06ff3351aa3ddc958fd51693d0e3d&=&format=webp&width=523&height=930',
-    alt: 'Social media image'
+    src: img7,
+    alt: 'lia'
   },
   {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1461611268845600927/370B3FDF-1E88-4538-93B4-F838644523C7.jpg?ex=6992bc11&is=69916a91&hm=1adbf8d43a017aa30bcbd54c145ab43991e06ff3351aa3ddc958fd51693d0e3d&=&format=webp&width=523&height=930',
-    alt: 'Social media image'
+    src: img8,
+    alt: 'lia'
   },
   {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1366842125722976256/IMG_2069.jpg?ex=6992b7ad&is=6991662d&hm=6d032222640e96cf8ed6b71679226ac9e905f9fc485c473a3b76ec0c3c769491&=&format=webp&width=766&height=930',
-    alt: 'Social media image'
-    },
-    {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1364803602991943761/IMG_4082.jpg?ex=69928d67&is=69913be7&hm=df7e1efc1091cb990bd19c0bc54d473c6bd65920a811b9ef932f27ca7da08659&=&format=webp&width=450&height=800',
-    alt: 'Social media image'
-    },
- {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1364803603616759909/IMG_0057.jpg?ex=69928d67&is=69913be7&hm=3a124bf0a9505e514e6c0cff073364f8c6074a9507804c7f7e8de85a35352d54&=&format=webp&width=600&height=800',
-    alt: 'Social media image'
-    },
-     {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1364803604602421299/IMG_9014.jpg?ex=69928d68&is=69913be8&hm=95e84474d03a41dd7c875891e2f02b9572f4cd84a69335a4dc506feaa75dd691&=&format=webp&width=600&height=800',
-    alt: 'Social media image'
-    },
-     {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1364803604996821052/IMG_3096.jpg?ex=69928d68&is=69913be8&hm=51d216fff1d4ca98ae298a2125796ab04758ba2b610a037900307e22121f2480&=&format=webp&width=450&height=800',
-    alt: 'Social media image'
-    },
-     {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1364803605483356190/IMG_5116.jpg?ex=69928d68&is=69913be8&hm=dd11b362c21611e6cfad5f42558ee5f7fb37a3338152e0cfa8440d3eae7c6f39&=&format=webp&width=600&height=800',
-    alt: 'Social media image'
-    },
-     {
-    src: 'https://media.discordapp.net/attachments/1306984078666498099/1364803605823225957/IMG_5502.jpg?ex=69928d68&is=69913be8&hm=bb78a4eae1226dac8e6b1d8e74ab413c6d156fcd7c2d31d0005b69a80254d72b&=&format=webp&width=600&height=800',
-    alt: 'Social media image'
-    },
-     {
-        src: 'https://media.discordapp.net/attachments/1306984078666498099/1364803606418685952/IMG_9264.jpg?ex=69928d68&is=69913be8&hm=3c800e09c9c8736ba63ed551be985f31b899687ce3e483276ab2619a9d1fb7df&=&format=webp&width=1066&height=800',
-    alt: 'Social media image'
-    },
-    {
-        src: 'https://media.discordapp.net/attachments/1306984078666498099/1370474369540952196/image0.jpg?ex=6992bf77&is=69916df7&hm=f55a3bd429886b3e1d42cc74f7b52dc8c7148e221b8041794a8fa865f7a69da8&=&format=webp&width=698&height=930',
-    alt: 'Social media image'
-    }
+    src: img9,
+    alt: 'lia'
+  },
+  {
+    src: img10,
+    alt: 'lia'
+  },
+  {
+    src: img11,
+    alt: 'lia'
+  }
+
 ];
 
 const DEFAULTS = {

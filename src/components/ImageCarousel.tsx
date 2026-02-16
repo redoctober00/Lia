@@ -85,14 +85,14 @@ const ImageCarousel: React.FC<CarouselProps> = ({ images }) => {
             {image.isVideo ? (
               <video 
                 ref={el => { videoRefs.current[index] = el; }}
-                src={image.url} 
+                src={image.src} 
                 className="w-full h-full object-cover"
                 muted
                 loop
                 playsInline
               />
             ) : (
-              <img src={image.url} alt={image.caption} className="w-full h-full object-cover" />
+              <img src={image.src} alt={image.caption} className="w-full h-full object-cover" />
             )}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
               <p className="text-white text-lg font-light tracking-wide">{image.caption}</p>

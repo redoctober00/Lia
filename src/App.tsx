@@ -5,6 +5,10 @@ import ImageCarousel from './components/ImageCarousel';
 import PhotoGalleryModal from './components/PhotoGalleryModal';
 import InfiniteMenu from './components/InfiniteMenu';
 import { CAROUSEL_IMAGES, GALLERY_IMAGES, MENU_ITEMS } from './data';
+import image1 from './assets/emoji1.png';
+import image2 from './assets/emoji2.png';
+import image3 from './assets/blue-emoji-removebg-preview.png';
+import image4 from './assets/blueemoji.png';
 
 import DomeGallery from './components/DomeGallery';
 
@@ -35,10 +39,11 @@ const App = () => {
           <div className="text-center space-y-8 max-w-4xl mx-auto relative z-10">
             <div className="flex gap-4 justify-center">
               <img 
-                src="https://media.discordapp.net/attachments/1317140929554939907/1472528965590847489/be758353de2fdaf7a5ae2f4a8a391405-removebg-preview.png?ex=6992e6f7&is=69919577&hm=64aa273f00c63e10a9a3f3775ee62b78ba8406447f1858335d6926be1f80a9b7&=&format=webp&quality=lossless&width=625&height=625" 
+                src={image1} 
                 alt="Love" 
                 className="w-30 h-20 mx-auto drop-shadow-2xl rounded-full object-cover "
               />
+              
             </div>
             <h1 className="text-7xl md:text-9xl font-bold bg-gradient-to-r from-rose-600 via-rose-600 to-rose-600 bg-clip-text text-transparent animate-fadeInUp tracking-tight leading-tight">
               To My Dearest Love, Lia
@@ -60,7 +65,7 @@ const App = () => {
               <div className="h-full flex flex-col justify-between">
                 <div>
                   <img 
-                    src="https://media.discordapp.net/attachments/1317140929554939907/1472558083300655226/blue-emoji-removebg-preview.png?ex=69930215&is=6991b095&hm=a565f8212cf2c1a4e57baf6bfcd5df4f7a733ee9549ce38acd55cfd75dcc5c9f&=&format=webp&quality=lossless&width=623&height=623" 
+                    src={image3} 
                     alt="Emoji" 
                     className="w-50 h-50 mb-4"
                   />
@@ -91,7 +96,7 @@ const App = () => {
                 </div>
                 <div className="flex items-center gap-3 mt-6 justify-end">
                   <img 
-                    src="https://media.discordapp.net/attachments/1317140929554939907/1472558750584934462/66b3e99627091900881d8abc_61-removebg-preview.png?ex=699302b4&is=6991b134&hm=d32215a908c82e9c45e024ae53a524e4a3b82b08849889e4840d30e38f4117ec&=&format=webp&quality=lossless&width=438&height=438" 
+                    src={image4}
                     alt="" 
                     className="w-12 h-12"
                   />
@@ -128,11 +133,12 @@ const App = () => {
                       key={idx}
                       className="aspect-square rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"
                     >
-                      <img src={img.url} alt={img.caption} className="w-full h-full object-cover" />
+                      <img src={img.src} alt={img.caption} className="w-full h-full object-cover" />
                     </div>
                   ))}
                 </div>
                 <p className="text-rose-600 mt-4 font-light text-sm">Click to view gallery </p>
+                 <p className="text-rose-600 mt-4 font-light text-right">Marami pa iba di ko malagay hashdahaha thank you sa artworks </p>
               </div>
             </BentoCard>
           </div>
@@ -163,7 +169,7 @@ const App = () => {
         <footer className="text-center py-12 px-4">
           <div className="space-y-4">
             <img 
-              src="https://media.discordapp.net/attachments/1317140929554939907/1472541459822415912/1c3edb10c493e32b9e27036ded80fdaf-removebg-preview.png?ex=6992f29a&is=6991a11a&hm=c2cb4c1daa2ce8f1dd2d6f88543d40f6b01379ac97d006a0ed9c721a91b75047&=&format=webp&quality=lossless&width=525&height=263" 
+              src={image2}
               alt="Love" 
               className="w-200 h-50 mx-auto"
             />

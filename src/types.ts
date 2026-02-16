@@ -5,7 +5,7 @@ export interface BentoCardProps {
 }
 
 export interface CarouselImage {
-  url: string;
+  src: string;
   caption: string;
   isVideo?: boolean;
 }
