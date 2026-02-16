@@ -125,7 +125,7 @@ const App = () => {
               <div onClick={() => setShowGallery(true)} className="h-full">
                 <div className="flex items-center gap-3 mb-4">
                   <Camera className="w-10 h-10 text-rose-600" />
-                  <h3 className="text-2xl font-bold text-rose-900">Arts you made</h3>
+                  <h3 className="text-2xl font-bold text-rose-900">Drawingan mo nga ko ate</h3>
                 </div>
                 <div className="grid grid-cols-3 gap-2">
                   {GALLERY_IMAGES.map((img, idx) => (
